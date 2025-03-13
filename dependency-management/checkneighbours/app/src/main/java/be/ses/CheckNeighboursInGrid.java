@@ -2,7 +2,7 @@ package be.ses;
 
 public class CheckNeighboursInGrid {
     public static void main(String[] args) {
-        // Test your code here
+        //System.out.println(getSameNeighboursIds(new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9}, 3, 3, 4));
     }
 
    /**
@@ -13,9 +13,10 @@ public class CheckNeighboursInGrid {
    *@param height - Specifies the height of the grid (extra for checking if 1D grid is complete given the specified width)
    *@param indexToCheck - Specifies the index of the element which neighbours that need to be checked
    */
-   public static Iterable<Integer> getSameNeighboursIds(Iterable<Integer> grid,int width, int height, int indexToCheck){
+   public static Iterable<Integer> getSameNeighboursIds(int[] grid,int width, int height, int indexToCheck){
       // TODO write your code below so you return the correct result
       Iterable<Integer> result = null;
       return result;
    }
+
 }
