@@ -63,7 +63,7 @@ public class CheckNeighboursInGrid {
             }
         }
 
-        if (indexToCheck < width*(height-1) && indexToCheck % (width+1) > 0 ) { // check if indexToCheck is not on the bottom right corner
+        if (indexToCheck < width*(height-1) && (indexToCheck+1) % width > 0 ) { // check if indexToCheck is not on the bottom right corner
             if (grid[indexToCheck] == grid [indexToCheck + (width+1)]){ 
                 result.add(indexToCheck + (width+1)); 
             }
