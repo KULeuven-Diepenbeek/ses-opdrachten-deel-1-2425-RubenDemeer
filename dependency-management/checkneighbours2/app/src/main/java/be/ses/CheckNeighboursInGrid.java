@@ -44,7 +44,7 @@ public class CheckNeighboursInGrid {
             }
         }
 
-        if (indexToCheck % width > 0) { // check if indexToCheck is not on the right edge
+        if ((indexToCheck+1) % width > 0) { // check if indexToCheck is not on the right edge
             if (grid[indexToCheck] == grid [indexToCheck + 1]) {
                 result.add(indexToCheck + 1); 
             }
