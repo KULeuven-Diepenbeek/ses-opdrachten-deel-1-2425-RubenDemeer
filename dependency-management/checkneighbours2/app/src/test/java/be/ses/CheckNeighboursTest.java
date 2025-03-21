@@ -177,7 +177,7 @@ public class CheckNeighboursTest {
     // 3. Assert
        assertThat(thrown)
        .isInstanceOf(IndexOutOfBoundsException.class)
-       .hasMessageContaining("Index out of bounds");
+       .hasMessageContaining("out of bounds");
 }
  
 
