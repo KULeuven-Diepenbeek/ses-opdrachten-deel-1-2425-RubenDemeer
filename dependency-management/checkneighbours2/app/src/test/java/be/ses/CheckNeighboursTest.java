@@ -179,7 +179,5 @@ public class CheckNeighboursTest {
        .isInstanceOf(IndexOutOfBoundsException.class)
        .hasMessageContaining("out of bounds");
 }
- 
-
 
 }
