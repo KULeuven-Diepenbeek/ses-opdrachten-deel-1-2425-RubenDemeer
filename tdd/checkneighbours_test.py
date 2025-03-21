@@ -54,7 +54,20 @@ class TestFunctions(unittest.TestCase):
         # Act
         result = get_same_neighbours_ids(voorbeeld_grid, 4, 4, 11)
         # Assert
-        self.assertEqual(result, [None])
+        self.assertEqual(result, [])
+    
+    def test_gegevenVoorbeeldgridWith4Height4IndexToCheck17_wanneerGetSameNeighboursIds_raisesError(self):
+        # Arrange
+        voorbeeld_grid = [ 0, 0, 1, 0,
+                          1, 1, 0, 2,
+                          2, 0, 1, 3,
+                          0, 1, 1, 1 ]
+        # Act
+        with self.assertRaises(IndexError):
+            get_same_neighbours_ids(voorbeeld_grid, 4, 4, 17)
+        
+        
+    
 
 if __name__ == '__main__':
     unittest.main()
